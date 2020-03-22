@@ -1,0 +1,169 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #0D1440;
+}
+
+/*Heart*/
+
+@keyframes pulse {
+	0% {
+        transform: scale(0.95);
+    
+	}
+
+	70% {
+        transform: scale(1.10);
+	}
+
+	100% {
+        transform: scale(0.95);
+	}
+}
+
+.heart-anime{
+    width: 100%;
+    margin: 200px 0px;
+    animation: 2s pulse infinite;
+    position: fixed; 
+    display: flex;
+    justify-content: center;
+}
+
+.heart{
+    transform: rotate(-45deg);
+    background-color:#BF1736;
+    height: 120px;
+    width: 120px;
+    box-shadow: 8px 8px 16px #0000006b;
+}
+
+.heart:before,
+.heart:after {
+    content:"";
+    background-color:#BF1736;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+}
+
+.heart:before{
+    top: -60px;
+}
+
+.heart:after{
+    left: 60px;
+}
+
+/*---------Square--------*/
+
+@keyframes rodar{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.square{
+    position: fixed;
+    margin: 200px;
+    width: 100px;
+    height: 100px;
+    background-color:#39bf17;
+    box-shadow: 8px 8px 16px #0000006b;
+
+    animation: 1s rodar infinite linear;
+}
+
+/*-------Circle-----------*/
+
+@keyframes mover{
+    from{
+        left: 1vw;
+    }
+    to{
+        left: 90vw;
+    }
+}
+
+.circle{
+    top: 10px;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #bf176b;
+    animation: 2s mover infinite linear alternate;
+    box-shadow: 8px 8px 16px #0000006b;
+}
+
+/*---------Forms------------*/
+
+@keyframes formas{
+    0%{
+        width: 100px;
+        height: 100px;
+        background-color:#008000;
+    }
+
+    50%{
+        background-color: #500050;
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
+    }
+
+    75%{
+        background-color: #d1fff9;
+        border-radius: 0;
+        width: 200px;
+        height: 100px;
+    }
+
+}
+
+.forms{
+    position: fixed;
+    margin: 200px 900px;
+    width: 100px;
+    height: 100px;
+    background-color:rgb(148, 21, 21);
+    animation: formas 2s linear alternate infinite;
+    box-shadow: 8px 8px 16px #0000006b;
+}
+
+/*---------Square--------*/
+
+@keyframes mover-rodar{
+    from {
+        transform: rotate(0deg);
+        left: 1vw;
+    }
+    to {
+        transform: rotate(360deg);
+        left: 90vw;
+    }
+}
+
+.square-bottom{
+    position: fixed;
+    margin: 450px 0;
+    width: 100px;
+    height: 100px;
+    background-color: #bf176b;
+    box-shadow: 8px 8px 16px #0000006b; 
+
+    
+    animation: 2s mover-rodar infinite linear alternate;
+}
