@@ -77,7 +77,7 @@ body{
 
 .square{
     position: fixed;
-    margin: 200px;
+    margin: 200px 15%;
     width: 100px;
     height: 100px;
     background-color:#39bf17;
@@ -135,7 +135,7 @@ body{
 
 .forms{
     position: fixed;
-    margin: 200px 1200px;
+    margin: 200px 75%;
     width: 100px;
     height: 100px;
     background-color:rgb(148, 21, 21);
